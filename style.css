@@ -324,6 +324,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: calc(var(--nav-h) + 60px) 24px 0;
 }
@@ -365,8 +366,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-content {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
   animation: heroFadeUp 1s cubic-bezier(0.4,0,0.2,1) 0.2s both;
 }
 
@@ -418,6 +419,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-stats {
   position: relative;
   max-width: 1200px;
+  width: 100%;
   margin: 60px auto 0;
   display: flex;
   align-items: center;
@@ -464,14 +466,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Scroll Hint */
 .scroll-hint {
-  position: absolute;
-  bottom: 36px; left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  padding: 32px 0 40px;
   animation: heroFadeUp 1s 1.2s both;
+  pointer-events: none;
 }
 .scroll-line {
   width: 1px; height: 48px;
